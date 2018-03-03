@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* ============================================= *
+ *  Single Style Sheet                           *
+ * ============================================= */
+
+@media all and (min-width:787px){
+/* --------------------------------- *
+ *  Personal Computer                *
+ * --------------------------------- */
+
+/* --------------- *
+ *  pages          *
+ * ----------------*/
+#container .c_area p,
+#container .wf_area p{font-size:1rem; margin-bottom:10px;}
+#container .wf_area ul{width:95%; list-style-type: disc; margin: auto;}
+#container .wf_area ul li{font-size: 1rem; line-height: 1.7rem; text-align: left; margin-bottom: 8px;}
+#container .wf_area ul li ul{list-style-type: circle; margin-bottom:8px;}
+#container .wf_area ul li ul li{margin-bottom:0px;}
+#container .wf_area ol{width:95%; margin: auto; list-style-type: decimal;}
+#container .wf_area ol li{font-size: 1rem; text-align: left; line-height: 1.7rem; margin-bottom:8px;}
+#container .wf_area ol li ol{margin-bottom: 8px;}
+#container .wf_area ol li ol li{margin-bottom: 0px;}
+p.ijo{text-align: right;}
+
+}
+
+@media screen and (max-width:786px){
+/* --------------------------------- *
+ *  Tablet and Smart Mobile Phone    *
+ * --------------------------------- */
+
+/* --------------- *
+ *  pages          *
+ * ----------------*/
+#container .c_area p,
+#container .wf_area p{font-size:0.9rem; margin-bottom:10px; line-height: 1.6rem;}
+#container .wf_area h3{font-size:1.15rem; line-height: 1.8rem;}
+#container .wf_area ul{width:90%; list-style-type: disc; margin: auto;}
+#container .wf_area ul li{margin-left: 8%;font-size: 0.9rem; line-height: 1.6rem; text-align: left; margin-bottom: 8px;}
+#container .wf_area ul li ul{list-style-type: circle; margin-bottom:8px;}
+#container .wf_area ul li ul li{margin-bottom:0px;}
+#container .wf_area ol{width:85%; margin: auto; list-style-type: decimal;}
+#container .wf_area ol li{font-size: .9rem; text-align: left; line-height: 1.6rem; margin-bottom:8px;}
+#container .wf_area ol li ol{margin-bottom: 8px;}
+#container .wf_area ol li ol li{margin-bottom: 0px;}
+p.ijo{text-align: right;}
+
+}

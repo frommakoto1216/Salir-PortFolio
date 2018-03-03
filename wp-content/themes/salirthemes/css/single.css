@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* ============================================= *
+ *  Single Style Sheet                           *
+ * ============================================= */
+
+@media all and (min-width:787px){
+/* --------------------------------- *
+ *  Personal Computer                *
+ * --------------------------------- */
+
+/* --------------- *
+ *  pages          *
+ * ----------------*/
+
+/* About */
+#t_about{width:100%; border-top:2px solid #999;border-bottom:2px solid #999;}
+#t_about th{font-size:1rem; vertical-align: middle; padding:8px; font-weight: 700; width: 150px; background:rgba(200,200,200,0.3);}
+#t_about td{font-size:1rem; vertical-align: middle; padding: 8px; line-height: 1.5rem; text-align: left;}
+#t_about tr:nth-child(even) {
+	background: #eee;
+}
+#n_shado{width:200px; margin: 15px auto 8px; height: 200px; display: block; overflow: hidden; border-radius:100%;}
+#n_shado img{margin: auto; display: block; width:100%; height: auto}
+.profile{width:100%; text-align: left; list-style-type: square; margin-bottom:25px;}
+.profile li{margin-left:30px; font-size:1rem; line-height: 1.7rem;}
+
+/* Contact */
+input{-webkit-appearance: none; border-radius:0;}
+#contact{width:850px; margin: auto; padding:20px 0 10px;}
+#contact dt{float:left; font-size:1rem; font-weight: 500; color:#666; margin-bottom:8px;}
+#contact dt span{font-size:0.75rem; font-weight: 400; color:#fff; padding:3px 5px; margin-right: 8px;}
+#contact dt span.req{background:red;}
+#contact dt span.any{background:#00AB79;}
+#contact dd{margin-bottom:8px; text-align: left; margin-left: 220px;}
+#contact dd input[type="tel"],
+#contact dd input[type="text"],
+#contact dd input[type="email"],
+#contact dd textarea{font-size:16px; border:1px solid #aaa; padding:5px; outline: none; font-family: 'Noto Sans JP'; font-weight: 300; -webkit-appearance: none; }
+#contact dd input[type="tel"],
+#contact dd input[type="text"],
+#contact dd input[type="email"]{width:630px;}
+#contact dd textarea{width:630px; height: 150px;}
+#contact dd input[type="tel"]:focus,
+#contact dd input[type="text"]:focus,
+#contact dd input[type="email"]:focus,
+#contact dd textarea:focus{border:1px solid #0082ED; background:#ffffee; box-shadow: 0 0 0.5rem #0082ED;}
+input[type="submit"]{border:0; display: block; width: 300px; height: 45px; font-size:1.2rem; font-weight: 700; font-family: 'Noto Sans JP'; background:darkorange; color:#fff; border-radius:8px; cursor:pointer;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+input[type="submit"]:hover{background:orange;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;}
+#c_btn{width: 300px; margin: 10px auto 20px; height: 45px; position: relative; cursor:pointer;}
+#c_btn::before{margin: auto; line-height: 45px; right: 15px; content: '\f01d'; font-family: 'fontello'; color:#fff; position: absolute; font-size:1.5rem;}
+
+/* wpcf7 */
+.wf_area .screen-reader-response{display: none;}
+.wf_area #contact dd .wpcf7-not-valid-tip{font-size:1rem; color:red; font-weight: 500; text-align: left; line-height: 1.5rem;}
+.wf_area .wpcf7-validation-errors, .wf_area .wpcf7-mail-sent-ok{width:654px; margin: auto; font-size:1rem; line-height: 1.7rem; padding:5px;}
+
+/* --------------- *
+ *  single         *
+ * ----------------*/
+#container #contents .c_area small{display: block; text-align: left; font-size:0.75rem; }
+#container #contents .c_area small time{color:#666; font-weight: 400; line-height: 1rem;}
+#container #contents .c_area span.cat{margin-top:5px; margin-bottom:10px; display:inline-block; width: 120px; text-align: center; background:#0082ED; color:#fff; font-size:0.8rem; line-height: 1rem; float:left; margin-left:5px; border-radius: 0.5rem;}
+#container #contents .c_area h3{clear: both;}
+#container #contents .c_area p{width:100%; text-align: left; line-height: 1.7rem; font-size:1rem;} 
+#container #contents .c_area p iframe,
+#container #contents .c_area p img{width: 98%; height: auto; margin: 15px auto; display: block;}
+
+/* News */
+#thumbnail{width:100%; height: 315px; margin: auto auto 10px; display: block; clear:both;}
+#thumbnail img{width:auto; max-height: 315px; max-width: 100%; margin: auto;}
+#thumbnail a img{cursor:pointer; border:1px solid #ccc;}
+
+/* Createinfo */
+#createinfo{width: 100%; margin: auto auto 8px;}
+#createinfo dt{float:left; font-weight: 700; font-size:1.1rem; display: block; width: 135px; height: 30px;}
+#createinfo dt .title{display: block; width:100%; height: 100%; background:#0082ED; color:#fff; margin: 2px 0; line-height: 30px;}
+#createinfo dd{line-height: 32px; font-size:1rem; height: 32px; border-bottom: 1px solid #0082ED;border-top: 1px solid #0082ED; margin: -1px auto; text-align: left; padding-left:145px; font-weight: 500;}
+#createinfo dd a{text-decoration: none;}
+
+/* LP List */
+#lplist p,#lplist a{display: inline;}
+#lplist{width:655px; margin:auto; border:1px solid #ccc; border-collapse: collapse; font-size:1rem;}
+#lplist thead{border:1px solid #ccc; background:#ddd; font-weight:500; line-height:1.5rem;}
+#lplist th{border-right:1px solid #ccc; border-bottom:1px dotted #ccc; background:#ddd; font-weight:500; vertical-align:middle;}
+#lplist td{vertical-align:middle; border-right:1px dotted #ccc; border-bottom:1px dotted #ccc;}
+#lplist th,#lplist td{padding:3px; line-height:1.5rem; width:60px}
+#contents .c_area #lplist td.wpattern{width:60px;}
+#contents .c_area #lplist td.wtext{width:535px; position:relative;}
+#contents .c_area #lplist td.wtext a{display: inline; background:none; color:#fff; background:#3399cc; text-decoration: none; font-weight: 500;}
+#contents .c_area #lplist td.wtext .mbtn{width:47px; height:25px;text-align:center; display:block; position:absolute; right:5px; bottom:5px;}
+#contents .c_area #lplist td.wtext .mbtn a{display:block; width:100%; height:100%; border:3px solid #3399cc;}
+#lplist tbody tr:nth-child(2n+1) {background: #eee;}
+#lplist tbody tr:hover {background:#eeffff;}
+
+
+/* --------------- *
+ *  Category       *
+ * ----------------*/
+#container #contents .c_area .categoryset{width: 679px; height: 180px; display: block; position: relative; overflow: hidden; border: 1px solid aliceblue;}
+#container #contents .c_area .categoryset a{background:#fff; display: block; width: 100%; height: 100%; text-decoration: none;}
+#container #contents .c_area .categoryset a:hover{background:aliceblue;}
+#container #contents .c_area .categoryset a .morebtn{position: absolute; right: 0; bottom:0;}
+#container #contents .c_area .categoryset a:hover .morebtn{border:2px solid #0082ED; background:#fff; color:#0082ED; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out;}
+#container #contents .c_area .categoryset dt{float:left; width: 135px;}
+#container #contents .c_area .categoryset dt .trim{display: block; width:120px; height: 120px; border-radius: 60px; margin: 30px auto; overflow: hidden; position: relative;}
+#container #contents .c_area .categoryset dt .trim img{display: block; width: auto; height: 100%; border-radius: 50%; position: absolute;   top: 50%;   left: 50%;   -webkit-transform: translate(-50%, -50%);   -ms-transform: translate(-50%, -50%);   transform: translate(-50%, -50%);}
+#container #contents .c_area .categoryset dd{width: 544px; margin-left:135px; text-align: left; position: relative;}
+#container #contents .c_area .categoryset dd small,
+#container #contents .c_area .categoryset dd span{display: block; position: absolute;}
+#container #contents .c_area .categoryset dd small{top:5px; right: 5px;}
+#container #contents .c_area .categoryset dd span{top:20px; right: 5px;}
+#container #contents .c_area .categoryset dd h4{display: block; margin:25px auto 5px; padding:0;  border:none; font-size:1.35rem; line-height: 1.5rem;}
+#container #contents .c_area .categoryset a dd p{color:#333; font-weight: 400;} 
+
+/* Page nav */
+.wp-pagenavi{display: block; width:200px; margin: 15px auto 30px; height: 45px;}
+.wp-pagenavi .page, .wp-pagenavi .pages{display: none;}
+.wp-pagenavi .current{font-size:1.5rem; color:#fff; background:#0082ED; width:42px; display:inline-block; height: 42px; line-height: 42px; font-weight: 700; border:#0082ED 3px solid; margin: auto; margin: 0 5px; border-radius:8px;}
+.wp-pagenavi .previouspostslink,.wp-pagenavi .nextpostslink{background:#fff; display:inline-block; width: 42px; height: 42px; line-height: 42px; border:#0082ED 3px solid; margin: auto; font-size:1.5rem; font-weight: 500; text-decoration: none; border-radius:8px;}
+.wp-pagenavi .previouspostslink:hover,.wp-pagenavi .nextpostslink:hover{background:#0082ED; color:yellow;}
+
+
+}
+
+@media screen and (max-width:786px){
+/* --------------------------------- *
+ *  Tablet and Smart Mobile Phone    *
+ * --------------------------------- */
+
+/* News */
+#thumbnail{width:95%; height:100%; margin: auto auto 8px;}
+#thumbnail img, #thumbnail iframe{width:auto; max-height: 300px; max-width: 100%; margin: auto;}
+#thumbnail a img{cursor:pointer; border:1px solid #ccc;}
+
+/* Createinfo */
+#createinfo{width: 100%; margin: auto auto 8px;}
+#createinfo dt{font-weight: 700; font-size:1rem; display: block; width:100%; height: 30px;}
+#createinfo dt .title{display: block; width:100%; height: 100%; background:#0082ED; color:#fff; margin: 2px 0; line-height: 30px;}
+#createinfo dd{line-height: 1.6rem; font-size:0.9rem; min-height: 35px; border-bottom: 1px solid #0082ED;border-top: 1px solid #0082ED; margin: -1px auto; font-weight: 500; text-align: center;}
+#createinfo dd a{text-decoration: none;}
+
+/* About */
+#t_about{width:100%; border-top:2px solid #999;border-bottom:2px solid #999;}
+#t_about th{font-size:0.9rem; line-height:1.5rem; vertical-align: middle; padding:2%; font-weight: 700; width: 20%; background:rgba(200,200,200,0.3);}
+#t_about td{font-size:0.85rem; vertical-align: middle; padding:2%; line-height: 1.5rem; text-align: left;}
+#t_about tr:nth-child(even) {
+	background: #eee;
+}
+#n_shado{width:200px; margin: 15px auto 8px; height: 200px; display: block; overflow: hidden; border-radius:100%;}
+#n_shado img{margin: auto; display: block; width:100%; height: auto}
+.profile{width:100%; text-align: left; list-style-type: square; margin-bottom:25px;}
+.profile li{margin-left:30px; font-size:0.9rem; line-height: 1.5rem; margin-bottom:3px;}
+
+/* Contact */
+input{-webkit-appearance: none; border-radius:0;}
+#contact{width:100%; margin: auto; padding:20px 0 10px;}
+#contact dt{font-size:1rem; font-weight: 500; color:#666; margin-bottom:8px; text-align: left;}
+#contact dt span{float:left; font-size:0.75rem; font-weight: 400; color:#fff; padding:3px 5px; margin-right: 8px;}
+#contact dt span.req{background:red;}
+#contact dt span.any{background:#00AB79;}
+#contact dd{margin-bottom:8px; text-align: left; width:98%;}
+#contact dd input[type="tel"],
+#contact dd input[type="text"],
+#contact dd input[type="email"],
+#contact dd textarea{font-size:16px; border:1px solid #aaa; padding:1%; outline: none; font-family: 'Noto Sans JP'; font-weight: 300; -webkit-appearance: none; }
+#contact dd input[type="tel"],
+#contact dd input[type="text"],
+#contact dd input[type="email"]{width:99%;}
+#contact dd textarea{width:99%; height: 150px; border-radius:0;}
+#contact dd input[type="tel"]:focus,
+#contact dd input[type="text"]:focus,
+#contact dd input[type="email"]:focus,
+#contact dd textarea:focus{border:1px solid #0082ED; background:#ffffee; box-shadow: 0 0 0.5rem #0082ED;}
+input[type="submit"]{border:0; display: block; width: 300px; height: 45px; font-size:1.2rem; font-weight: 700; font-family: 'Noto Sans JP'; background:darkorange; color:#fff; border-radius:8px; cursor:pointer;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+input[type="submit"]:hover{background:orange;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;}
+#c_btn{width: 300px; margin: 10px auto 20px; height: 45px; position: relative; cursor:pointer;}
+#c_btn::before{margin: auto; line-height: 45px; right: 15px; content: '\f01d'; font-family: 'fontello'; color:#fff; position: absolute; font-size:1.5rem;}
+
+/* wpcf7 */
+.wf_area .screen-reader-response{display: none;}
+.wf_area #contact dd .wpcf7-not-valid-tip{font-size:0.9rem; color:red; font-weight: 500; text-align: left; line-height: 1.4rem;}
+.wf_area .wpcf7-validation-errors, .wf_area .wpcf7-mail-sent-ok{width:94%; margin: auto; font-size:0.9rem; line-height: 1.6rem; padding:5px;}
+
+/* --------------- *
+ *  single         *
+ * ----------------*/
+#container #contents .c_area small{display: block; text-align: left; font-size:0.75rem; }
+#container #contents .c_area small time{color:#666; font-weight: 100; line-height: 1rem;}
+#container #contents .c_area span.cat{margin-top:5px; margin-bottom:8px; display:inline-block; width: 120px; text-align: center; background:#0082ED; color:#fff; font-size:0.8rem; line-height: 1rem; float:left; margin-left:5px; border-radius: 0.5rem;}
+#container #contents .c_area h3{clear: both;}
+#container #contents .c_area p{width:100%; text-align: left; line-height: 1.6rem; font-size:0.9rem; margin-bottom:3px; clear:both;} 
+#container #contents .c_area p iframe,
+#container #contents .c_area p img{width: 98%; height: auto; margin: 15px auto; display: block;}
+
+/* LP List */
+#lplist p,#lplist a{display: inline;}
+#lplist{width:98%; margin:auto; border:1px solid #ccc; border-collapse: collapse;  font-size:.9rem;}
+#lplist thead{border:1px solid #ccc; background:#ddd; font-weight:bold; line-height:1.5rem;}
+#lplist th{border-right:1px solid #ccc; border-bottom:1px dotted #ccc; background:#ddd; font-weight:bold; vertical-align:middle;}
+#lplist td{vertical-align:middle; border-right:1px dotted #ccc; border-bottom:1px dotted #ccc;}
+#lplist th,#lplist td{padding:1%; line-height:1.5rem;}
+#contents .c_area #lplist td.wtext a{display: inline; background:none; color:#fff; background:#3399cc; text-decoration: none; font-weight: bold;width:82%;}
+#contents .c_area #lplist td.wtext .mbtn{width:100%; height:45px; line-height:45px; text-align:center; display:block;}
+#contents .c_area #lplist td.wtext .mbtn a{display:block; width:100%; height:100%; border:1% solid #3399cc;}
+#lplist tbody tr:nth-child(2n+1) {background: #eee;}
+#lplist tbody tr:hover {background:#eeffff;}
+
+
+/* --------------- *
+ *  Category       *
+ * ----------------*/
+#container #contents .c_area .categoryset{width: 98%; height: 280px; display: block; position: relative; overflow: hidden; border: 1px solid aliceblue; margin: 0; padding:0;}
+#container #contents .c_area .categoryset a{background:#fff; display: block; width: 100%; height: 100%; text-decoration: none; margin: 0; padding:0;}
+#container #contents .c_area .categoryset a:hover{background:aliceblue;}
+#container #contents .c_area .categoryset a .morebtn{position: absolute; right: 0; bottom:0;}
+#container #contents .c_area .categoryset a:hover .morebtn{border:2px solid #0082ED; background:#fff; color:#0082ED; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out;}
+#container #contents .c_area .categoryset dt{width: 100%; height: 135px; padding:5px 0 0;}
+#container #contents .c_area .categoryset dt .trim{display: block; width:120px; height: 120px; border-radius: 60px; margin: auto; overflow: hidden; position: relative;}
+#container #contents .c_area .categoryset dt .trim img{display: block; width: auto; height: 100%; border-radius: 50%; position: absolute;   top: 50%;   left: 50%;   -webkit-transform: translate(-50%, -50%);   -ms-transform: translate(-50%, -50%);   transform: translate(-50%, -50%);}
+#container #contents .c_area .categoryset dd{width: 100%; text-align: left; position: relative; height: 145px;}
+#container #contents .c_area .categoryset a dd small{color:#666;display: block; padding-left:5px;}
+#container #contents .c_area .categoryset a dd span.cat{background:#0082ED; color:#fff; margin-left:5px; padding:2px 9px; font-size:10px; border-radius:10px;}
+#container #contents .c_area .categoryset a dd h4{display: block; padding:0; clear:both;border:none; font-size:1.2rem; line-height: 1.5rem; text-align: center;} 
+#container #contents .c_area .categoryset a dd p{color:#333; font-weight: 400; font-size:0.85rem; line-height: 1.4rem; padding:0 5px} 
+
+/* Page nav */
+.wp-pagenavi{display: block; width:200px; margin: 15px auto 30px; height: 45px;}
+.wp-pagenavi .page, .wp-pagenavi .pages{display: none;}
+.wp-pagenavi .current{font-size:1.5rem; color:#fff; background:#0082ED; width:42px; display:inline-block; height: 42px; line-height: 42px; font-weight: 700; border:#0082ED 3px solid; margin: auto; margin: 0 5px; border-radius:8px;}
+.wp-pagenavi .previouspostslink,.wp-pagenavi .nextpostslink{background:#fff; display:inline-block; width: 42px; height: 42px; line-height: 42px; border:#0082ED 3px solid; margin: auto; font-size:1.5rem; font-weight: 500; text-decoration: none; border-radius:8px;}
+.wp-pagenavi .previouspostslink:hover,.wp-pagenavi .nextpostslink:hover{background:#0082ED; color:yellow;}
+
+
+}

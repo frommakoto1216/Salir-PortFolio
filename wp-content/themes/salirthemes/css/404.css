@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* ========================================== *
+ *   404 Not Found Style Sheet                *
+ * ========================================== */
+
+@media all and (min-width:787px){
+/* ------------------------ *
+ *  Personal Computer       *
+ * ------------------------ */
+body{font-family: "NotoS-Regular", Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif; background:url(../images/bg_main.png); background-attachment: fixed;}
+
+/* Header */
+#header{width:100%; margin: 0; height: 50px; background:#fff; box-shadow: 0rem 0rem 0.5rem #ccc; z-index:99999; border-bottom:2px solid #0082ED;
+font-family:"NotoS-Regular",Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif;
+}
+#header nav{width:100%; margin: 0 auto; height: 50px; }
+#header nav h1{display: block; height: 50px; width:150px; margin: auto;}
+#header nav h1 a{display: block; width:100%; height: 100%; text-indent: 110%; overflow: hidden; white-space: nowrap; background: url(../images/h1_title.svg) center no-repeat; background-size:auto 75%;}
+#header nav #globalnav li a:hover{text-decoration: none; color:#fff; background:#0082ED;}
+
+/* Main */
+#main{clear:both; padding: 50px 0;
+font-family: "NotoS-Regular",Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif;}
+#main h2{font-weight: normal;font-size:1.2rem; color:#0082ED; line-height: 1rem; margin:15px auto; font-family: "NotoS-bold",Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif;}
+#main p{font-size:0.95rem;line-height: 1rem; margin:15px auto;}
+#main #btn{width:260px; height: 38px; line-height: 38px; font-size:1rem; display: block; margin: 15px auto;border-radius:19px; border:2px solid #999; background:#fff;}
+#main #btn a{display: block; width:100%; height: 100%; font-weight: bold; color:#333;font-family: "NotoS-Medium",Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif;}
+#main #btn a:hover{display: block; width:100%; height: 100%; font-weight: bold; color:#666; text-decoration: none;}
+#main #img_error{display: block; margin: 15px auto; background:url(../images/img_404_image.png) no-repeat center; width:300px; height:385px;}
+
+/* Footer */
+#footer{width:100%; margin: 0; padding-top:0px; background:#fff;font-family:"NotoS-Regular",Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif;}
+#footer nav{width:100%; margin: 0 auto;}
+#footer address{clear:both;font-size:0.8rem; text-align: center; font-style: normal; padding:15px 0;}
+}
+
+
+@media all and (max-width:786px){
+/* ------------------------ *
+ *  Tablet and Mobile       *
+ * ------------------------ */
+body{font-family:Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif; background:url(../images/bg_main.png); background-attachment: fixed;}
+
+/* Header */
+#header{width:100%; margin: 0; height: 50px; background:#fff; box-shadow: 0rem 0rem 0.5rem #ccc; z-index:99999; border-bottom:2px solid #0082ED;
+font-family:Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif;
+}
+#header nav{width:100%; margin: 0 auto; height: 50px; }
+#header nav h1{display: block; height: 50px; width:150px; margin: auto;}
+#header nav h1 a{display: block; width:100%; height: 100%; text-indent: 110%; overflow: hidden; white-space: nowrap; background: url(../images/h1_title.svg) center no-repeat; background-size:auto 75%;}
+#header nav #globalnav li a:hover{text-decoration: none; color:#fff; background:#0082ED;}
+
+/* Main */
+#main{clear:both; padding: 50px 0;
+font-family:Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif;}
+#main h2{font-weight: bold; font-size:1.2rem; color:#0082ED; line-height: 1rem; margin:15px auto;}
+#main p{font-size:0.95rem;line-height: 1rem; margin:15px auto;}
+#main #btn{width:260px; height: 38px; line-height: 38px; font-size:1rem; display: block; margin: 15px auto;border-radius:19px; border:2px solid #999; background:#fff;}
+#main #btn a{display: block; width:100%; height: 100%; font-weight: bold; color:#333;}
+#main #btn a:hover{display: block; width:100%; height: 100%; font-weight: bold; color:#666; text-decoration: none;}
+#main #img_error{display: block; margin: 15px auto; background:url(../images/img_404_image.png) no-repeat center; width:300px; height:385px;}
+
+/* Footer */
+#footer{width:100%; margin: 0; padding-top:0px; background:#fff;font-family:Verdana,Roboto,"Droid Sans","Hiragino Kaku Gothic ProN",YuGothic,Meiryo,sans-serif;}
+#footer nav{width:100%; margin: 0 auto;}
+#footer address{clear:both;font-size:0.8rem; text-align: center; font-style: normal; padding:15px 0;}
+}
